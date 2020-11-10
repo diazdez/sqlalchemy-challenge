@@ -26,10 +26,10 @@ app = Flask(__name__)
 
 @app.route("/")
 def welcome():
-     #List all routes that are available. 
+     #List all API routes that are available. 
     return (
         f"<h3><br/><h3>"
-        f"<h1>Welcome to Honolulu's Climate Analysis' website!<br/><h1>"
+        f"<h1>Welcome to Hawaii's Climate Analysis' website!<br/><h1>"
         f"<h3><br/><h3>" 
         f"<h3>***The following Routes will provide you with specific data analysis*** <br/><h3>"
         f"<br/>" 
@@ -46,7 +46,7 @@ def welcome():
         f"(Note: When entering dates, please use 'yyyy-mm-dd' format)<br/>"
         f"  * For example, the following route is for a given 'start date' of Januauy 1, 2016:<br/>"
             f"/api/v1.0/2016-01-01<br/>"
-        f"/api/v1.0//&lt;start date&gt;<br/>"
+        f"/api/v1.0/&lt;start date&gt;<br/>"
         f"<br/>" 
         f"Route for Minimum (TMIN), Maximum (TMAX) and Average (TAVG) temperatures for a given 'start date' and 'end date':<br/>" 
         f"(Note: When entering dates, please use 'yyyy-mm-dd' format)<br/>"
